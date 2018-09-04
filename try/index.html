@@ -29,22 +29,7 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-    (function(){
-      emailjs.init("user_ugj4Uz91vYQsL8WGyH7JH");
-     })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('contact_service', 'contact_template', this);
-            });
-        }
-    </script>
-
+   
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -518,7 +503,7 @@
                         <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary" id="submit">Submit</button>
+                        <button class="full-width btn--primary">Submit</button>
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">
