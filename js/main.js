@@ -334,7 +334,7 @@
             submitHandler: function(form) {
    
                 var sLoader = $('.submit-loader');
-                var formData = new FormData(this);
+                var formData = new FormData(form);
                 formData.append('service_id', 'default_service');
                 formData.append('template_id', 'template_Mij22Zvy');
                 formData.append('user_id', 'user_ugj4Uz91vYQsL8WGyH7JH');
