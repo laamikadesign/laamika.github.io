@@ -1,1 +1,0 @@
-# laamika.github.io

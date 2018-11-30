@@ -1,178 +1,650 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+    
+<!--<![endif]-->
 
 <head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="SR">
-
     <title>Laamika Design Studio</title>
+    <meta name="description" content="Laamika Design Studio">
+    <meta name="author" content="">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="icon/ico" sizes="16x16">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <!-- Fonts -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom Theme CSS -->
-    <link href="css/pixelstrawberry.css" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+   
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body id="top">
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    <i class="fa fa-ellipsis-v"></i>  Laamika<span class="light">    Design Studio</span>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+    
+                <p>“Fashion is not necessarily about labels. It’s not about brands. It’s about something else that comes from within you.”<a href='#0'>~ Ralph Lauren</a></p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h1>Welcome to,<br></h1>
+                     <h1>Laamika Design Studio</h1>
+               
+                <h3>
+                    We provide an exclusive bespoke range, <br>
+                    curating the latest trends as per your <br>
+                    taste and style.<br>
+                </h3>
+
+                <div class="home-content__buttons">
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Us
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
                 </a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="http://www.facebook.com/laamikadesignstudio"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="http://www.instagram.com/laamikadesign"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="http://www.twitter.com/laamikadesign"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+           
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Hello there from</h3>
+                <h1 class="display-1 display-1--light">Laamika Design</h1>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+        </div> <!-- end section-header -->
 
-    <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="brand-heading">We are arriving</h2>
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                    We have arrived with the latest heart throbbing range of party wears for both men and women. Exclusive bespoke with superior quality fabrics, in the desired colors and works. Just wait a while, and we guarantee you with a perfect outfit that will suit your taste and trend. 
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
 
-                        <ul class="countdown">
-                            <li>
-                                <span class="days">00</span>
-                                <p class="days_ref">days</p>
-                            </li>
-                            <li class="seperator">.</li>
-                            <li>
-                                <span class="hours">00</span>
-                                <p class="hours_ref">hours</p>
-                            </li>
-                            <li class="seperator">:</li>
-                            <li>
-                                <span class="minutes">00</span>
-                                <p class="minutes_ref">minutes</p>
-                            </li>
-                            <li class="seperator">:</li>
-                            <li>
-                                <span class="seconds">00</span>
-                                <p class="seconds_ref">seconds</p>
-                            </li>
-                        </ul>
-                       
-                        <p class="intro-text">Laamika Design – the fashion studio for all your clothing needs.</p>
-                        <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
-                                <i class="fa fa-angle-double-down animated"></i>
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">358</div>
+                <h5>Happy Customers</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">75</div>
+                <h5>Pre-Wedding Clients</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">36</div>
+                <h5>Rental Clients</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">454</div>
+                <h5>Positive Feedback</h5> 
+            </div>
+
+        </div> <!-- end about-stats -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What We Do</h3>
+                <h1 class="display-2">Hold your breath, as you meet your expectations</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-paint-brush"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Brand Identity</h3>
+                    <p>Laamika Design Studio dedicates its soul to all fashion lovers, who wishes to look awesome, adorable and astounding. We are mainly catering those sizes which lies in midways or plus way.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Services</h3>
+                    <p>We fish out the latest trends in fashion and colors for you , and customize a pretty dream dress suitable to your taste. “ITS ALL ABOUT YOU” is our mantra.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Style Advisor</h3>
+                    <p>Not to worry peeps… whether you are stout or buff , tall or short , doesn’t matter with your age , color or gender! We are happy to help in cultivating your personality in fashion and let you take the spot light.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Right Fits</h3>
+                    <p>If you are worried about the fitting, then it is time to wrap it up and thrash it in the store. We tailor our designs to your given sizes and choices, and deliver a heart melting outfit at your door step. 
+
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Recent Works</h3>
+                    <h1 class="display-2 display-2--light">Let’s go gaga and check out some of our latest designs</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/dress1c.jpg" class="thumb-link" title="Dress Code 001" data-size="1050x700">
+                                    <img src="images/portfolio/dress1a.jpg" 
+                                         srcset="images/portfolio/dress1a.jpg 1x, images/portfolio/dress1b.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Item Code 001
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Laamika Design
+                                </p>
+                            </div>
+    
+                            <a href="mailto:ipshita@laamikadesign.com" class="item-folio__project-link" title="Enquire about this">
+                                <i class="icon-link"></i>
                             </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Falunt the trend with this cape sleeves peplum crop and a white lace semi cicular skirt with a hint of desi touch.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/dress2c.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                    <img src="images/portfolio/dress2a.jpg" 
+                                         srcset="images/portfolio/dress2a.jpg 1x, images/portfolio/dress2b.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Item Code 002
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Laamika Design
+                                </p>
+                            </div>
+    
+                            <a href="mailto:ipshita@laamikadesign.com" class="item-folio__project-link" title="Enquire about this">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Showcase you glam quotient with this lovely white maxi strap dress which well complients the grace of zari golden shrug</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/dress3c.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                    <img src="images/portfolio/dress3a.jpg"
+                                         srcset="images/portfolio/dress3a.jpg 1x, images/portfolio/dress3b.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Item Code 003
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Laamika Design
+                                </p>
+                            </div>
+    
+                            <a href="mailto:ipshita@laamikadesign.com" class="item-folio__project-link" title="Enquire about this">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Fuse your ethnic choice with a western silhouette, when you adorn this dhoti pattern dress in georgette and zari work.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/dress4c.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                    <img src="images/portfolio/dress4a.jpg" 
+                                         srcset="images/portfolio/dress4a.jpg 1x, images/portfolio/dress4b.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Item Code 004
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Laamika Design
+                                </p>
+                            </div>
+    
+                            <a href="mailto:ipshita@laamikadesign.com" class="item-folio__project-link" title="Enquire about this">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Party doesn't gets over without a chic outfit, so style yourself in this trendy backless jumpsuit in wide bottom and halter silhouette.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/dress5c.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                    <img src="images/portfolio/dress5a.jpg" 
+                                         srcset="images/portfolio/dress5a.jpg 1x, images/portfolio/dress5b.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Item Code 005
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Laamika Design
+                                </p>
+                            </div>
+    
+                            <a href="mailto:ipshita@laamikadesign.com" class="item-folio__project-link" title="Enquire about this">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Glam up with this fusion of ethnic embroidered off shoulder green dress and flaunt the princess in you.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/dress6c.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                    <img src="images/portfolio/dress6a.jpg"
+                                         srcset="images/portfolio/dress6a.jpg 1x, images/portfolio/dress6b.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Item Code 006
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Laamika Design
+                                </p>
+                            </div>
+    
+                            <a href="mailto:ipshita@laamikadesign.com" class="item-folio__project-link" title="Enquire about this">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Ditch the chliche and walk the floor in this front slit zari lehanga and a lapel crop top.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+
+   
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Reach out for your fashion needs or just say hello</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+            
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            14/41A, Ravindra Plaza,<br>
+                            Opposite Sahara States,<br>
+                            Jankipuram, Lucknow-226021
+
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            ipshita@laamikadesign.com<br>
+                            sales@laamikadesign.com
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            
+                            Mobile: (+91)7991261766<br>
+                           
+                        </p>
+                    </div>
+
+                    <ul class="contact-social">
+                        <li>
+                            <a href="http://www.facebook.com/laamikadesignstudio"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.facebook.com/laamikadesign"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com/laamikadesign"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                       
+                    </ul> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Us</h2>
-                <p>Your wait is soon going to be over! We are arriving with the latest heart throbbing range of party wears for both men and women. Exclusive bespoke with superior quality fabrics, in the desired colors and works.</p>
-                <p> Just wait a while, and we guarantee you with a perfect outfit that will suit your taste and trend.</p>
-                            </div>
-        </div>
-    </section>
-
-    <section id="services" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Services</h2>
-                    <p>Our service includes fishing the latest trend for you according to your desired taste, 
-                    and delivering an exclusive customized version at your door step. Just be comfortably seated in your couch and browse or to add in your pinch of attitude, mail, ping or call!</p>
-                    
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
                 </div>
             </div>
+
         </div>
-    </section>
 
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Us</h2>
-                <p>Feel free to contact us  with your feedbacks on your experience with us and any advice on how we can 
-                improvise our service and make them more customer friendly. Our Priority is You!</p>
-                <p>Email : laamikadesignstudio@gmail.com
-                
-                <ul class="list-inline banner-social-buttons">
+    </div> <!-- end photoSwipe background -->
 
-                    <li><a href="https://www.facebook.com/pixelstrawberry" class="btn btn-default btn-lg">
-                    <i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
 
-                    <li><a href="https://twitter.com/pixelstraw" class="btn btn-default btn-lg">
-                    <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-
-                </ul>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
-    </section>
-
-    <div id="map"></div>
-
-    <!-- Core JavaScript Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    
-    
-    <!-- Custom Theme JavaScript -->
-    <script src="js/pixelstrawberry.js"></script>
+    </div>
 
 
-    <!-- Countdown JavaScript -->
-    
-    <script type="text/javascript" src="js/jquery.downCount.js"></script>
-
-    <script type="text/javascript">
-        $('.countdown').downCount({
-            date: '10/10/2018 12:00:00',
-            offset: +10
-        }, function () {
-            
-        });
-    </script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
