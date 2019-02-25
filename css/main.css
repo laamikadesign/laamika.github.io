@@ -2512,7 +2512,7 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
- 
+
 .masonry:after {
     content: "";
     display: table;
@@ -2520,7 +2520,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .masonry .grid-sizer, .masonry__brick {
-    width: 40%;
+    width: 33%;
 }
 
 .masonry__brick {
