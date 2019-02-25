@@ -2492,7 +2492,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    background: #FFFFFF;
+    background: #000000;
     padding: 0 0 15rem 0;
     min-height: 800px;
     position: relative;
@@ -2505,6 +2505,7 @@ html.no-csstransitions .home-content__main {
 
 .works-content {
     max-width: 1160px;
+    margin-left: 10rem;
     margin-top: -23.4rem;
 }
 
@@ -2512,6 +2513,7 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
+ 
 .masonry:after {
     content: "";
     display: table;
@@ -2519,12 +2521,12 @@ html.no-csstransitions .home-content__main {
 }
 
 .masonry .grid-sizer, .masonry__brick {
-    width: 50%;
+    width: 40%;
 }
 
 .masonry__brick {
-    float: left;
-    padding: 0;
+    float: center;
+    padding: 6px;
 }
 
 .item-folio {
